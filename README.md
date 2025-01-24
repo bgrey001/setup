@@ -57,6 +57,18 @@ install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+theme (add to .zshrc)
+
+if you want P10k, install here:
+
+```
+https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#oh-my-zsh
+```
+
+```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
 install plugins for oh my zsh
 
 ```
@@ -78,6 +90,11 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 add to .zshrc
 
 ```
+export PATH=/opt/homebrew/bin:$PATH
+```
+
+```
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 ```
+
 
