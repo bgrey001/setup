@@ -98,3 +98,31 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlightin
 ```
 
 
+install pyenv
+
+```
+brew install pyenv
+```
+
+install dedicated python version with pyenv (e.g. 3.11.10)
+
+```
+pyenv install 3.11.10
+```
+
+
+```
+pyenv local 3.11.10
+```
+
+or 
+
+```
+pyenv global 3.11.10
+```
+
+poetry set to use this version (in directory with pyproject.toml)
+
+```
+poetry env use $(pyenv which python)
+```
